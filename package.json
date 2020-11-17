@@ -1,0 +1,31 @@
+{
+  "name": "@taufik-nurrohman/is",
+  "description": "Conditional utility.",
+  "version": "0.0.1",
+  "main": "index.js",
+  "exports": {
+    "import": "./index.mjs",
+    "require": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "index.mjs"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taufik-nurrohman/is.git"
+  },
+  "keywords": [
+    "helper",
+    "utility"
+  ],
+  "author": "Taufik Nurrohman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taufik-nurrohman/is/issues"
+  },
+  "homepage": "https://taufik-nurrohman.github.io"
+}
