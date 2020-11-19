@@ -3,9 +3,14 @@
 ($$ => {
     const isArray = x => Array.isArray(x);
     const isBoolean = x => false === x || true === x;
+    const isComment = x => isNode(x) && /* Node.COMMENT_NODE */ 8 === x.nodeType;
+    const isDefined = x => 'undefined' !== typeof x;
+    const isDocument = x => document && document === x;
+    const isElement = x => isNode(x) && /* Node.ELEMENT_NODE */ 1 === x.nodeType;
     const isFloat = x => isNumber(x) && 0 !== x % 1;
     const isFunction = x => 'function' === typeof x;
     const isInteger = x => isNumber(x) && 0 === x % 1;
+    const isNode = x => isSet(Node) && x instanceof Node;
     const isNull = x => null === x;
     const isNumber = x => 'number' === typeof x;
     const isNumeric = x => /^-?(?:\d*.)?\d+$/.test(x + "");
@@ -13,29 +18,32 @@
         if ('object' !== typeof x) {
             return false;
         }
-        return isPlainObject ? x instanceof Object : true;
+        return isPlainObject ? x instanceof Object && Object === x.constructor : true;
     };
     const isPattern = x => x instanceof RegExp;
-    const isSet = x => 'undefined' !== typeof x && null !== x;
+    const isScalar = x => isBoolean(x) || isNumber(x) || isString(x);
+    const isSet = x => isDefined(x) && !isNull(x);
     const isString = x => 'string' === typeof x;
-    const isNode = x => isSet(Node) && x instanceof Node;
-    const isNodeComment = x => isNode(x) && Node.COMMENT_NODE === x.nodeType;
-    const isNodeElement = x => isNode(x) && Node.ELEMENT_NODE === x.nodeType;
-    const isNodeText = x => isNode(x) && Node.TEXT_NODE === x.nodeType;
+    const isText = x => isNode(x) && /* Node.TEXT_NODE */ 3 === x.nodeType;
+    const isWindow = x => window && window === x;
     $$.isArray = isArray;
     $$.isBoolean = isBoolean;
+    $$.isComment = isComment;
+    $$.isDefined = isDefined;
+    $$.isDocument = isDocument;
+    $$.isElement = isElement;
     $$.isFloat = isFloat;
     $$.isFunction = isFunction;
     $$.isInteger = isInteger;
+    $$.isNode = isNode;
     $$.isNull = isNull;
     $$.isNumber = isNumber;
     $$.isNumeric = isNumeric;
     $$.isObject = isObject;
     $$.isPattern = isPattern;
+    $$.isScalar = isScalar;
     $$.isSet = isSet;
     $$.isString = isString;
-    $$.isNode = isNode;
-    $$.isNodeComment = isNodeComment;
-    $$.isNodeElement = isNodeElement;
-    $$.isNodeText = isNodeText;
+    $$.isText = isText;
+    $$.isWindow = isWindow;
 })(exports || window || {});

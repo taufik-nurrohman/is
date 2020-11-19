@@ -50,11 +50,21 @@ Methods
 
 ### isBoolean(x)
 
+### isComment(x)
+
+### isDefined(x)
+
+### isDocument(x)
+
+### isElement(x)
+
 ### isFloat(x)
 
 ### isFunction(x)
 
 ### isInteger(x)
+
+### isNode(x)
 
 ### isNull(x)
 
@@ -66,14 +76,12 @@ Methods
 
 ### isPattern(x)
 
+### isScalar(x)
+
 ### isSet(x)
 
 ### isString(x)
 
-### isNode(x)
+### isText(x)
 
-### isNodeComment(x)
-
-### isNodeElement(x)
-
-### isNodeText(x)
+### isWindow(x)
