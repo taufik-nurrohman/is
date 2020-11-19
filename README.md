@@ -46,42 +46,42 @@ console.log(isString('false'));
 Methods
 -------
 
-### isArray(x)
+### isArray(any)
 
-### isBoolean(x)
+### isBoolean(any)
 
-### isComment(x)
+### isComment(any)
 
-### isDefined(x)
+### isDefined(any)
 
-### isDocument(x)
+### isDocument(any)
 
-### isElement(x)
+### isElement(any)
 
-### isFloat(x)
+### isFloat(number)
 
-### isFunction(x)
+### isFunction(any)
 
-### isInteger(x)
+### isInteger(number)
 
-### isNode(x)
+### isNode(any)
 
-### isNull(x)
+### isNull(any)
 
-### isNumber(x)
+### isNumber(any)
 
 ### isNumeric(string)
 
-### isObject(x, isPlainObject = false)
+### isObject(any, isPlainObject = false)
 
-### isPattern(x)
+### isPattern(any)
 
-### isScalar(x)
+### isScalar(any)
 
-### isSet(x)
+### isSet(any)
 
-### isString(x)
+### isString(any)
 
-### isText(x)
+### isText(any)
 
-### isWindow(x)
+### isWindow(any)
