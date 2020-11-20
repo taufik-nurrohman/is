@@ -62,6 +62,8 @@ Methods
 
 ### isFunction(any)
 
+### isInstance(object, constructor)
+
 ### isInteger(number)
 
 ### isNode(any)
@@ -72,7 +74,7 @@ Methods
 
 ### isNumeric(string)
 
-### isObject(any, isPlainObject = false)
+### isObject(any, isPlain = true)
 
 ### isPattern(any)
 
