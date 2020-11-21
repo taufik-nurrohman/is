@@ -1,3 +1,5 @@
+import {isPattern} from '@taufik-nurrohman/pattern';
+
 export const isArray = x => Array.isArray(x);
 export const isBoolean = x => false === x || true === x;
 export const isComment = x => isNode(x) && /* Node.COMMENT_NODE */ 8 === x.nodeType;
@@ -18,7 +20,7 @@ export const isObject = (x, isPlain = true) => {
     }
     return isPlain ? isInstance(x, Object) : true;
 };
-export const isPattern = x => isInstance(x, RegExp);
+export const isPattern = isPattern;
 export const isScalar = x => isBoolean(x) || isNumber(x) || isString(x);
 export const isSet = x => isDefined(x) && !isNull(x);
 export const isString = x => 'string' === typeof x;
