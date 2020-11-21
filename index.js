@@ -1,7 +1,6 @@
 // This file is in sync with `index.mjs` file to enable CommonJS module loader feature.
 // If you want to add/remove something here, make sure to do it in `index.mjs` file first.
 ($$ => {
-    const {isPattern} = require('@taufik-nurrohman/pattern');
     const isArray = x => Array.isArray(x);
     const isBoolean = x => false === x || true === x;
     const isComment = x => isNode(x) && /* Node.COMMENT_NODE */ 8 === x.nodeType;
@@ -22,6 +21,7 @@
         }
         return isPlain ? isInstance(x, Object) : true;
     };
+    const isPattern = x => isInstance(x, RegExp);
     const isScalar = x => isBoolean(x) || isNumber(x) || isString(x);
     const isSet = x => isDefined(x) && !isNull(x);
     const isString = x => 'string' === typeof x;
