@@ -17,17 +17,7 @@ console.log(isString('false'));
 </script>
 ~~~
 
-### Browser Module
-
-~~~ html
-<script type="module">
-import {isString} from './@taufik-nurrohman/is/index.mjs';
-
-console.log(isString('false'));
-</script>
-~~~
-
-### CommonJS Module
+### CommonJS
 
 ~~~ js
 const {isString} = require('@taufik-nurrohman/is');
@@ -35,7 +25,7 @@ const {isString} = require('@taufik-nurrohman/is');
 console.log(isString('false'));
 ~~~
 
-### ECMAScript Module
+### ECMAScript
 
 ~~~ js
 import {isString} from '@taufik-nurrohman/is';

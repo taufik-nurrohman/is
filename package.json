@@ -1,7 +1,7 @@
 {
   "name": "@taufik-nurrohman/is",
   "description": "Conditional utility.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "index.js",
   "exports": {
     "import": "./index.mjs",
