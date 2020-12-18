@@ -1,15 +1,10 @@
-
-
-
-
-
 {
   "author": "Taufik Nurrohman",
   "bugs": "https://github.com/taufik-nurrohman/is/issues",
   "description": "Conditional utility.",
   "exports": {
-    "import": "index.mjs",
-    "require": "index.js"
+    "import": "./index.mjs",
+    "require": "./index.js"
   },
   "files": [
     "index.js",
@@ -27,5 +22,5 @@
     "type": "git",
     "url": "git+https://github.com/taufik-nurrohman/is.git"
   },
-  "version": "0.0.7"
+  "version": "0.0.8"
 }
