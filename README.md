@@ -8,15 +8,6 @@ These functions are very inspired by PHP which already has standard functions su
 Usage
 -----
 
-### Browser
-
-~~~ html
-<script src="./@taufik-nurrohman/is/index.js"></script>
-<script>
-console.log(isString('false'));
-</script>
-~~~
-
 ### CommonJS
 
 ~~~ js
