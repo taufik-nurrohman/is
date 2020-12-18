@@ -1,31 +1,31 @@
+
+
+
+
+
 {
-  "name": "@taufik-nurrohman/is",
+  "author": "Taufik Nurrohman",
+  "bugs": "https://github.com/taufik-nurrohman/is/issues",
   "description": "Conditional utility.",
-  "version": "0.0.6",
-  "main": "index.js",
   "exports": {
-    "import": "./index.mjs",
-    "require": "./index.js"
+    "import": "index.mjs",
+    "require": "index.js"
   },
   "files": [
     "index.js",
     "index.mjs"
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/taufik-nurrohman/is.git"
-  },
+  "homepage": "https://taufik-nurrohman.js.org",
   "keywords": [
     "helper",
     "utility"
   ],
-  "author": "Taufik Nurrohman",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/taufik-nurrohman/is/issues"
+  "main": "index.js",
+  "name": "@taufik-nurrohman/is",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taufik-nurrohman/is.git"
   },
-  "homepage": "https://taufik-nurrohman.github.io"
+  "version": "0.0.7"
 }
