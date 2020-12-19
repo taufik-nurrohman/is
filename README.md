@@ -31,13 +31,7 @@ Methods
 
 ### isBoolean(any)
 
-### isComment(any)
-
 ### isDefined(any)
-
-### isDocument(any)
-
-### isElement(any)
 
 ### isFloat(number)
 
@@ -46,8 +40,6 @@ Methods
 ### isInstance(object, constructor)
 
 ### isInteger(number)
-
-### isNode(any)
 
 ### isNull(any)
 
@@ -65,6 +57,4 @@ Methods
 
 ### isString(any)
 
-### isText(any)
-
-### isWindow(any)
+### isWindow(any) (deprecated)
