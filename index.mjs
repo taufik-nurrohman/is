@@ -14,8 +14,6 @@ export const isObject = (x, isPlain = true) => {
     }
     return isPlain ? isInstance(x, Object) : true;
 };
-export const isPattern = x => isInstance(x, RegExp);
 export const isScalar = x => isBoolean(x) || isNumber(x) || isString(x);
 export const isSet = x => isDefined(x) && !isNull(x);
 export const isString = x => 'string' === typeof x;
-export const isWindow = x => isInstance(x, Window); // Deprecated

@@ -49,12 +49,8 @@ Methods
 
 ### isObject(any, isPlain = true)
 
-### isPattern(any)
-
 ### isScalar(any)
 
 ### isSet(any)
 
 ### isString(any)
-
-### isWindow(any) (deprecated)

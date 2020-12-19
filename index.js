@@ -14,11 +14,9 @@ const isObject = (x, isPlain = true) => {
     }
     return isPlain ? isInstance(x, Object) : true;
 };
-const isPattern = x => isInstance(x, RegExp);
 const isScalar = x => isBoolean(x) || isNumber(x) || isString(x);
 const isSet = x => isDefined(x) && !isNull(x);
 const isString = x => 'string' === typeof x;
-const isWindow = x => isInstance(x, Window); // Deprecated
 
 Object.assign(exports || {}, {
     isArray,
@@ -32,9 +30,7 @@ Object.assign(exports || {}, {
     isNumber,
     isNumeric,
     isObject,
-    isPattern,
     isScalar,
     isSet,
-    isString,
-    isWindow
+    isString
 });
