@@ -33,6 +33,8 @@ Methods
 
 ### isDefined(any)
 
+### isEmpty(any)
+
 ### isFloat(number)
 
 ### isFunction(any)
