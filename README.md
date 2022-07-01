@@ -33,8 +33,6 @@ Methods
 
 ### isDefined(any)
 
-### isEmpty(any)
-
 ### isFloat(number)
 
 ### isFunction(any)
@@ -56,3 +54,5 @@ Methods
 ### isSet(any)
 
 ### isString(any)
+
+### isVoid(any)

@@ -1,18 +1,6 @@
 export const isArray = x => Array.isArray(x);
 export const isBoolean = x => false === x || true === x;
 export const isDefined = x => 'undefined' !== typeof x;
-export const isEmpty = x => {
-    if (isString(x) && "" === x.trim()) {
-        return true;
-    }
-    if (isArray(x) && 0 === x.length) {
-        return true;
-    }
-    if (isObject(x) && 0 === Object.keys(x).length) {
-        return true;
-    }
-    return !x;
-};
 export const isFloat = x => isNumber(x) && 0 !== x % 1;
 export const isFunction = x => 'function' === typeof x;
 export const isInstance = (x, of) => x && isSet(of) && x instanceof of;
@@ -29,3 +17,15 @@ export const isObject = (x, isPlain = true) => {
 export const isScalar = x => isBoolean(x) || isNumber(x) || isString(x);
 export const isSet = x => isDefined(x) && !isNull(x);
 export const isString = x => 'string' === typeof x;
+export const isVoid = x => {
+    if (isString(x) && "" === x.trim()) {
+        return true;
+    }
+    if (isArray(x) && 0 === x.length) {
+        return true;
+    }
+    if (isObject(x) && 0 === Object.keys(x).length) {
+        return true;
+    }
+    return !x;
+};
