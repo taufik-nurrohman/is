@@ -37,7 +37,7 @@ Methods
 
 ### isFunction(any)
 
-### isInstance(object, constructor)
+### isInstance(object, constructor, exact = false)
 
 ### isInteger(number)
 
