@@ -15,7 +15,7 @@ const isInstance = (x, of, exact) => {
 const isInteger = x => isNumber(x) && 0 === x % 1;
 const isNull = x => null === x;
 const isNumber = x => 'number' === typeof x;
-const isNumeric = x => /^-?(?:\d*.)?\d+$/.test(x + "");
+const isNumeric = x => /^[+-]?(?:\d*.)?\d+$/.test(x + "");
 const isObject = (x, isPlain = true) => {
     if (!x || 'object' !== typeof x) {
         return false;
